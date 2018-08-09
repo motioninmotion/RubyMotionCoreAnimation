@@ -2,7 +2,7 @@ class ShapesView < UIButton
   def init
     super
 
-    setBackgroundColor UIColor.blackColor
+    backgroundColor = UIColor.blackColor
 
     # addSubview(image_view = UIImageView.new)
     # image_view.image = UIImage.imageNamed('title')
@@ -18,7 +18,7 @@ class ShapesView < UIButton
     self
   end
 
-  def animate(sender)
+  def animate(_)
     if @image_layer.opacity > 0.5
       @image_layer.opacity = 0.5
       @image_layer.position = [161, 235]
